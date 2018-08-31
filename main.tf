@@ -1,6 +1,6 @@
 # Create ssh public key for server access
 resource "hcloud_ssh_key" "pubkey" {
-  name = "${var.instance_name}"
+  name = "${var.name}"
   public_key = "${var.ssh_key}"
 }
 
