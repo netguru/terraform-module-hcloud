@@ -1,3 +1,8 @@
+# Setup provider
+provider "hcloud" {
+  token = "${var.token}"
+}
+
 # Create ssh public key for server access
 resource "hcloud_ssh_key" "pubkey" {
   name = "${var.name}"
