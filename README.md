@@ -1,5 +1,4 @@
 # terraform-module-hcloud
-===========
 
 A terraform module to provide a server in Hetzner Cloud, that we use in Netguru
 
