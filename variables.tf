@@ -11,7 +11,7 @@ variable "instance_type" {
   default = "cx21"
 }
 
-variable "instance_name" {
+variable "name" {
   description = "Hetzner Cloud instance name"
 }
 

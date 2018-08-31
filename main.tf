@@ -6,7 +6,7 @@ resource "hcloud_ssh_key" "pubkey" {
 
 # Create a new server
 resource "hcloud_server" "server" {
-  name = "${var.instance_name}"
+  name = "${var.name}"
   image = "${var.image}"
   server_type = "${var.instance_type}"
   keep_disk = "${var.keep_disk}"
