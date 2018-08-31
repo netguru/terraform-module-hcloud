@@ -21,7 +21,7 @@ module "hetzner" {
 
   token = "<hcloud_token>"
   ssh_key = "<ssh_public_key>"
-  name = "example_server"
+  name = "example-server"
 
 }
 ```
