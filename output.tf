@@ -7,7 +7,7 @@ output "name" {
 }
 
 output "type" {
-  value = "${hcloud_server.server.type}"
+  value = "${hcloud_server.server.server_type}"
 }
 
 output "status" {
