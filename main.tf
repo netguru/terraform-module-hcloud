@@ -16,13 +16,6 @@ resource "hcloud_server" "server" {
   server_type = "${var.instance_type}"
   keep_disk = "${var.keep_disk}"
   ssh_keys = [ "${hcloud_ssh_key.pubkey.id}" ]
-
-  provisioner "remote-exec" {
-    inline = [
-      "apt-get update -y",
-      "apt-get install python build-essential python-setuptools python3-setuptools -y",
-    ]
-  }
 }
 
 # Assign floatimg ip to server
