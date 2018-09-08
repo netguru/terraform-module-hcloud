@@ -16,6 +16,7 @@ resource "hcloud_server" "server" {
   server_type = "${var.instance_type}"
   keep_disk = "${var.keep_disk}"
   ssh_keys = [ "${hcloud_ssh_key.pubkey.id}" ]
+  user_data = "${file("bootstrap.yml")}"
 }
 
 # Assign floatimg ip to server
