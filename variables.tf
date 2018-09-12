@@ -27,5 +27,5 @@ variable "keep_disk" {
 
 variable "cloud_init" {
   description = "Additional cloud init script"
-  default = true
+  default = []
 }
