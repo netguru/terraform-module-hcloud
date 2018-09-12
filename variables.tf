@@ -22,7 +22,7 @@ variable "image" {
 
 variable "keep_disk" {
   description = "Hetzner Cloud allow downgrade of server"
-  default = true
+  default = ""
 }
 
 variable "cloud_init" {
