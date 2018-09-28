@@ -19,8 +19,4 @@ resource "hcloud_server" "server" {
   user_data = "${var.cloud_init}"
 }
 
-# Assign floatimg ip to server
-resource "hcloud_floating_ip" "ip" {
-  type = "ipv4"
-  server_id = "${hcloud_server.server.id}"
-}
+
