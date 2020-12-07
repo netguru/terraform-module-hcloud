@@ -1,0 +1,5 @@
+**/*.tfstate
+**/.terraform/
+**/.DS_Store
+**/*.tfvars
+**/*.pub

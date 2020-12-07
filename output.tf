@@ -1,15 +1,15 @@
 output "ip" {
-  value = "${hcloud_server.server.ipv4_address}"
+  value = hcloud_server.server.ipv4_address
 }
 
 output "name" {
-  value = "${hcloud_server.server.name}"
+  value = hcloud_server.server.name
 }
 
 output "type" {
-  value = "${hcloud_server.server.server_type}"
+  value = hcloud_server.server.server_type
 }
 
 output "status" {
-  value = "${hcloud_server.server.status}"
+  value = hcloud_server.server.status
 }
